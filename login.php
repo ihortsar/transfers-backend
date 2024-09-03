@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: http://localhost:4200'); // Adjust if needed
-header('Access-Control-Allow-Methods: POST, OPTIONS'); // Allow POST and OPTIONS methods
-header('Access-Control-Allow-Headers: Content-Type'); // Allow Content-Type header
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Methods: POST, OPTIONS'); 
+header('Access-Control-Allow-Headers: Content-Type'); 
 require 'classes/User.php';
 require 'classes/Database.php';
 

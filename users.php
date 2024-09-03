@@ -1,11 +1,15 @@
 <?php
 header('Content-Type: application/json');
-include 'classes/Database.php';
+header("Access-Control-Allow-Origin: *");
+
+require 'classes/Database.php';
+require 'classes/User.php';
 
 $db = new Database();
 $conn = $db->getConnection();
 
 function get_users($conn)
+
 {
     $sql = "SELECT * FROM users";
     $results = $conn->query($sql);
